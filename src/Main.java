@@ -3,9 +3,9 @@ public class Main {
         System.out.println("Hello world!");
 
         System.out.println("My args are:");
-        // parcours du tableau
-        for (int i = 0; i < args.length; i++) {
-            System.out.println(args[i]);
+        // parcours du tableau avec foreach /!\ au cas d'utilisation / perf.
+        for (String arg : args) {
+            System.out.println(arg);
         }
     }
 }
